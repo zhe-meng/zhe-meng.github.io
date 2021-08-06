@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020-2021 孟哲版权所有</copyright><lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020-2021 孟哲版权所有</copyright>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
@@ -13,87 +13,19 @@
     </image>
     
     <item>
-      <title>**Zhe Meng***, Feng Zhao, Miaomiao Liang, et al.</title>
-      <link>/authors/zhe-meng-feng-zhao-miaomiao-liang-et-al./</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>/authors/zhe-meng-feng-zhao-miaomiao-liang-et-al./</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>**Zhe Meng***, Licheng Jiao, Miaomiao Liang, et al.</title>
-      <link>/authors/zhe-meng-licheng-jiao-miaomiao-liang-et-al./</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/authors/zhe-meng-licheng-jiao-miaomiao-liang-et-al./</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>**Zhe Meng**, Lingling Li*, Licheng Jiao, et al.</title>
-      <link>/authors/zhe-meng-lingling-li-licheng-jiao-et-al./</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/zhe-meng-lingling-li-licheng-jiao-et-al./</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>**Zhe Meng**, Lingling Li*, Xu Tang, et al.</title>
-      <link>/authors/zhe-meng-lingling-li-xu-tang-et-al./</link>
-      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/zhe-meng-lingling-li-xu-tang-et-al./</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>**Zhe Meng**</title>
-      <link>/authors/zhe-meng/</link>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/zhe-meng/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Miaomiao Liang*, Licheng Jiao</title>
-      <link>/authors/miaomiao-liang-licheng-jiao/</link>
-      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/miaomiao-liang-licheng-jiao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;h4 id=&#34;heading&#34;&gt;个人简介：&lt;/h4&gt;
+      <description>&lt;h4 id=&#34;heading&#34;&gt;个人简介&lt;/h4&gt;
 &lt;p&gt;孟哲，男，1992年10月生，陕西铜川人。&lt;/p&gt;
-&lt;h4 id=&#34;heading1&#34;&gt;教育经历：&lt;/h4&gt;
-&lt;p&gt;2014年 获西安电子科技大学学士学位&lt;br&gt;
-2020年 获西安电子科技大学博士学位（本科直博），师从俄罗斯自然科学院外籍院士、欧洲科学院外籍院士焦李成教授。&lt;/p&gt;
-&lt;h4 id=&#34;heading2&#34;&gt;主要研究方向：&lt;/h4&gt;
+&lt;h4 id=&#34;heading1&#34;&gt;教育经历&lt;/h4&gt;
+&lt;p&gt;2014年6月 获西安电子科技大学学士学位&lt;br&gt;
+2020年6月 获西安电子科技大学博士学位 （本科直博），师从俄罗斯自然科学院外籍院士、欧洲科学院外籍院士焦李成教授。&lt;/p&gt;
+&lt;h4 id=&#34;heading2&#34;&gt;主要研究方向&lt;/h4&gt;
 &lt;p&gt;深度学习理论，机器学习理论，高分辨率高光谱遥感影像解译&lt;/p&gt;
 &lt;h4 id=&#34;heading3&#34;&gt;工作经历&lt;/h4&gt;
 &lt;p&gt;2020年7月-至今 西安邮电大学 通信与信息工程学院（人工智能学院）讲师&lt;/p&gt;
-&lt;h4 id=&#34;heading4&#34;&gt;论文成果：&lt;/h4&gt;
-&lt;h5 id=&#34;heading5&#34;&gt;国际期刊（*为通讯作者）&lt;/h5&gt;
-&lt;p&gt;[1]. &lt;strong&gt;Zhe Meng*&lt;/strong&gt;, Feng Zhao, Miaomiao Liang, and Wen Xie. Deep residual involution network for hyperspectral image classification[J]. &lt;strong&gt;&lt;em&gt;Remote Sensing&lt;/em&gt;&lt;/strong&gt;, 2021, 13(16): 3055.（中科院二区Top，IF:4.848）&lt;a href=&#34;https://doi.org/10.3390/rs13163055&#34;&gt;DOI&lt;/a&gt;&lt;br&gt;
-[2]. &lt;strong&gt;Zhe Meng*&lt;/strong&gt;, Licheng Jiao, Miaomiao Liang, and Feng Zhao. Hyperspectral image classification with mixed link networks[J]. &lt;strong&gt;&lt;em&gt;IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing&lt;/em&gt;&lt;/strong&gt;, 2021, 14：2494-2507.（中科院二区，IF:3.784）&lt;a href=&#34;https://doi.org/10.1109/JSTARS.2021.3053567&#34;&gt;DOI&lt;/a&gt;&lt;br&gt;
-[3.] &lt;strong&gt;Zhe Meng*&lt;/strong&gt;, Licheng Jiao, Miaomiao Liang, and Feng Zhao. A lightweight spectral-spatial convolution module for hyperspectral image classification[J]. &lt;strong&gt;&lt;em&gt;IEEE Geoscience and Remote Sensing Letters&lt;/em&gt;&lt;/strong&gt;, 2021, &lt;em&gt;Accept&lt;/em&gt;.（中科院二区, IF:3.966）&lt;a href=&#34;https://doi.org/10.1109/LGRS.2021.3069202&#34;&gt;DOI&lt;/a&gt;&lt;br&gt;
-[4.] &lt;strong&gt;Zhe Meng&lt;/strong&gt;, Lingling Li*, Licheng Jiao, Zhixi Feng, Xu Tang, and Miaomiao Liang. Fully dense multiscale fusion network for hyperspectral image classification[J]. &lt;strong&gt;&lt;em&gt;Remote Sensing&lt;/em&gt;&lt;/strong&gt;, 2019, 11(22): 2718.（中科院二区Top, IF:4.848）&lt;a href=&#34;https://doi.org/10.3390/rs11222718&#34;&gt;DOI&lt;/a&gt;&lt;br&gt;
-[5.] &lt;strong&gt;Zhe Meng&lt;/strong&gt;, Lingling Li*, Xu Tang, Zhixi Feng, Licheng Jiao, and Miaomiao Liang. Multipath residual network for spectral-spatial hyperspectral image classification[J]. &lt;strong&gt;&lt;em&gt;Remote Sensing&lt;/em&gt;&lt;/strong&gt;, 2019, 11(16): 1896. (中科院二区Top, IF:4.848) &lt;a href=&#34;https://doi.org/10.3390/rs11161896&#34;&gt;DOI&lt;/a&gt;&lt;br&gt;
-[6.] Miaomiao Liang*, Licheng Jiao, and &lt;strong&gt;Zhe Meng&lt;/strong&gt;. A superpixel-based relational autoencoder for feature extraction of hyperspectral images[J]. &lt;strong&gt;&lt;em&gt;Remote Sensing&lt;/em&gt;&lt;/strong&gt;, 2019, 11(20): 2454.（中科院二区Top, IF:4.848）&lt;a href=&#34;https://doi.org/10.3390/rs11202454&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;heading6&#34;&gt;科研课题：&lt;/h4&gt;
-&lt;p&gt;国家自然科学基金委员会：面上项目，61877066，数据驱动的混合逆问题cGANs回归及其在高光谱数据解混中的应用，2019-01-01至2022-12-31，在研，参与。&lt;/p&gt;
-&lt;h4 id=&#34;heading7&#34;&gt;学术兼职：&lt;/h4&gt;
-&lt;h5 id=&#34;heading8&#34;&gt;审稿人&lt;/h5&gt;
-&lt;p&gt;IEEE Transactions on Neural Networks and Learning Systems&lt;/p&gt;
-&lt;h4 id=&#34;heading9&#34;&gt;联系方式:&lt;/h4&gt;
-&lt;p&gt;通信地址：西安市长安区西长安街618号&lt;br&gt;
-科研邮箱：zhemeng@xupt.edu.cn&lt;br&gt;
-办公邮箱：mengzhe2016@163.com&lt;br&gt;
-办公地点：通院大楼509&lt;/p&gt;
-&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;span id=&#34;busuanzi_container_site_pv&#34;&gt;本站总访问量&lt;span id=&#34;busuanzi_value_site_pv&#34;&gt;&lt;/span&gt;次&lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     
