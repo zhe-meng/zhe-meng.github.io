@@ -62,6 +62,10 @@
   </url>
   
   <url>
+    <loc>/eng/courses/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <xhtml:link
@@ -134,13 +138,10 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>/eng/</loc>
   </url>
   
   <url>
-=======
->>>>>>> 793bfe758e45293576d276cd08527b07c713b597
     <loc>/publication_types/</loc>
     <xhtml:link
                 rel="alternate"
