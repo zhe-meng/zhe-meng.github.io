@@ -19,15 +19,26 @@
       <guid>/zh/authors/admin/</guid>
       <description>&lt;!-- #### 个人简介
 孟哲，男，1992年10月生，陕西铜川人 --&gt;
-&lt;h2 id=&#34;zhe-meng-&#34;&gt;Zhe Meng (孟哲)&lt;/h2&gt;
-&lt;h4 id=&#34;education&#34;&gt;Education&lt;/h4&gt;
-&lt;p&gt;2010.09-2014.06             B.E. in School of Electronic Engineering, Xidian University&lt;br&gt;
-2014.09-2020.06         Ph.D in School of Artificial Intelligence, Xidian University         Supervisor: Prof. &lt;a href=&#34;https://faculty.xidian.edu.cn/JLC/zh_CN/index.htm&#34;&gt;Licheng Jiao&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h4&gt;
-&lt;p&gt;2020.07-now     Xi’an University of Posts and Telecommunications     Lecturer&lt;/p&gt;
-&lt;h4 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h4&gt;
-&lt;p&gt;Deep Learning&lt;br&gt;
-Hyperspectral Image Classification&lt;/p&gt;
+&lt;h2 id=&#34;zhe-meng-&#34;&gt;Zhe Meng &lt;a href=&#34;/&#34;&gt;(孟哲)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;font-color2db8cd--short-bio-fontbr-&#34;&gt;&lt;font color=&#34;#2DB8CD&#34;&gt;  Short Bio &lt;/font&gt;&lt;br /&gt;&lt;/h2&gt;
+&lt;p&gt;Dr. Meng received the B.S. and
+Ph.D. degrees from Xidian University, Xi&#39;an, China,
+in 2014 and 2020, respectively, under the supervision of Prof. &lt;a href=&#34;https://faculty.xidian.edu.cn/JLC/zh_CN/index.htm&#34;&gt;Licheng Jiao&lt;/a&gt;.
+He is currently a Lecturer with the School of
+Telecommunication and Information Engineering,
+Xi&#39;an University of Posts and Telecommunications.
+His research interests include deep learning and hyperspectral image classification.&lt;/p&gt;
+&lt;!-- #### Education
+2010.09-2014.06    &amp;nbsp;&amp;nbsp;&amp;nbsp;      B.E. in School of Electronic Engineering, Xidian University \
+2014.09-2020.06  &amp;nbsp;&amp;nbsp;&amp;nbsp;    Ph.D in School of Artificial Intelligence, Xidian University &amp;nbsp;&amp;nbsp;&amp;nbsp;     Supervisor: Prof. [Licheng Jiao](https://faculty.xidian.edu.cn/JLC/zh_CN/index.htm)
+
+#### Work Experience  
+
+2020.07-now &amp;nbsp;&amp;nbsp;&amp;nbsp; Xi’an University of Posts and Telecommunications &amp;nbsp;&amp;nbsp;&amp;nbsp; Lecturer
+
+#### Research Interests
+Deep Learning\
+Hyperspectral Image Classification --&gt;
 &lt;p&gt;Email：zhemeng@xupt.edu.cn&lt;/p&gt;
 </description>
     </item>

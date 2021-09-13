@@ -62,7 +62,7 @@
   </url>
   
   <url>
-    <loc>/eng/courses/</loc>
+    <loc>/zh/courses/</loc>
   </url>
   
   <url>
@@ -110,6 +110,10 @@
   </url>
   
   <url>
+    <loc>/zh/authors/admin/</loc>
+  </url>
+  
+  <url>
     <loc>/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -138,10 +142,6 @@
   </url>
   
   <url>
-    <loc>/eng/</loc>
-  </url>
-  
-  <url>
     <loc>/publication_types/</loc>
     <xhtml:link
                 rel="alternate"
@@ -167,6 +167,10 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/zh/</loc>
   </url>
   
 </urlset>
