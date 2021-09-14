@@ -116,11 +116,6 @@
   </url>
   
   <url>
-    <loc>/zh/students/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -174,10 +169,6 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/zh/</loc>
   </url>
   
 </urlset>
