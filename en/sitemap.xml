@@ -62,10 +62,6 @@
   </url>
   
   <url>
-    <loc>/zh/courses/</loc>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
     <xhtml:link
@@ -117,11 +113,6 @@
                 hreflang="en"
                 href="/students/"
                 />
-  </url>
-  
-  <url>
-    <loc>/zh/students/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -178,10 +169,6 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/zh/</loc>
   </url>
   
 </urlset>
