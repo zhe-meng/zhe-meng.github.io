@@ -36,6 +36,11 @@
   </url>
   
   <url>
+    <loc>/english/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/enroll/</loc>
     <priority>0</priority>
   </url>
