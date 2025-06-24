@@ -25,13 +25,16 @@
     <loc>/english/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/enroll/</loc>
+    <loc>/photos/</loc>
     <priority>0</priority>
   </url><url>
     <loc>/publications/</loc>
     <priority>0</priority>
   </url><url>
     <loc>/students/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>/zhaosheng/</loc>
     <priority>0</priority>
   </url><url>
     <loc>/authors/</loc>
