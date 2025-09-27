@@ -975,40 +975,67 @@ table a:hover {
     font-weight: 600;
 }
 
-/* 手机端调整 - 重点修复 */
+/* 手机端调整 - 只针对有序号列的表格 */
 @media screen and (max-width: 768px) {
     table {
-        font-size: 12px; /* 手机端字体调小 */
-        line-height: 1.5; /* 行高也调小 */
+        font-size: 12px;
+        line-height: 1.5;
     }
     
     table td {
-        padding: 6px 8px; /* 大幅减少内边距 */
+        padding: 6px 8px;
     }
     
-    /* 序号列在手机端更紧凑 */
-    table td:first-child {
-        width: 40px; /* 缩小宽度 */
+    /* 只有当表格有3列时才应用序号列样式 */
+    table tr td:first-child:nth-last-child(3),
+    table tr td:first-child:nth-last-child(3) ~ td {
+        /* 这个选择器表示表格有3列 */
+    }
+    
+    /* 具体针对3列表格（序号列在第一位） */
+    table tr td:first-child:nth-last-child(3) {
+        width: 40px;
         font-size: 11px;
         padding: 6px 4px;
     }
     
-    /* 年份列在手机端更紧凑 */
-    table td:last-child {
-        width: 50px; /* 缩小宽度 */
+    /* 针对3列表格的最后一列（年份列） */
+    table tr td:first-child:nth-last-child(3) ~ td:last-child {
+        width: 50px;
         font-size: 11px;
         padding: 6px 4px;
     }
 }
 
-/* 超小屏幕手机（如iPhone SE） */
-@media screen and (max-width: 375px) {
-    table {
-        font-size: 11px; /* 更小的字体 */
+/* 更简单的方法：给有序号列的表格添加class */
+.table-with-index {
+    /* 正常样式 */
+}
+
+.table-with-index td:first-child {
+    /* 序号列样式 */
+}
+
+.table-with-index td:last-child {
+    /* 年份列样式 */
+}
+
+/* 手机端 */
+@media screen and (max-width: 768px) {
+    .table-with-index {
+        font-size: 12px;
     }
     
-    table td {
-        padding: 4px 6px;
+    .table-with-index td:first-child {
+        width: 40px;
+        font-size: 11px;
+        padding: 6px 4px;
+    }
+    
+    .table-with-index td:last-child {
+        width: 50px;
+        font-size: 11px;
+        padding: 6px 4px;
     }
 }
 </style>
