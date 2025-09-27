@@ -926,6 +926,92 @@
 </tr>
 </tbody>
 </table>
+<style>
+table {
+    width: 100%;
+    border: none;
+    margin: 25px 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+table td {
+    padding: 14px 15px;
+    border: none;
+    vertical-align: top;
+    color: #000000;
+    font-weight: 500;
+}
+
+table tr {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #e8f4ff;
+}
+
+table strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+table a {
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+table a:hover {
+    color: #003377;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* 手机端调整 - 重点修复 */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px; /* 手机端字体调小 */
+        line-height: 1.5; /* 行高也调小 */
+    }
+    
+    table td {
+        padding: 6px 8px; /* 大幅减少内边距 */
+    }
+    
+    /* 序号列在手机端更紧凑 */
+    table td:first-child {
+        width: 40px; /* 缩小宽度 */
+        font-size: 11px;
+        padding: 6px 4px;
+    }
+    
+    /* 年份列在手机端更紧凑 */
+    table td:last-child {
+        width: 50px; /* 缩小宽度 */
+        font-size: 11px;
+        padding: 6px 4px;
+    }
+}
+
+/* 超小屏幕手机（如iPhone SE） */
+@media screen and (max-width: 375px) {
+    table {
+        font-size: 11px; /* 更小的字体 */
+    }
+    
+    table td {
+        padding: 4px 6px;
+    }
+}
+</style>
 
     </div>
   
