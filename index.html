@@ -569,8 +569,8 @@
     <h4 id="个人简介">个人简介</h4>
 <p>孟哲，男，1992年10月生，博士，中共党员，陕西铜川人。陕西高校青年创新团队核心成员，西安邮电大学“优秀导师团队”成员，“智能基座”华为云与计算先锋教师。主持陕西省自然科学基础研究计划项目2项（面上项目、青年项目C类）、陕西省教育厅科学研究计划项目2项（青年创新团队项目、自然科学专项项目）、教育部产学合作协同育人项目2项。参与国家自然科学基金面上项目等多项国家级和省部级项目。</p>
 <h4 id="教育经历">教育经历</h4>
-<p>2014年6月 获西安电子科技大学学士学位<br>
-2020年6月 获西安电子科技大学博士学位 本科直博 导师：<a href="https://faculty.xidian.edu.cn/JLC/zh_CN/index.htm">焦李成教授</a></p>
+<p>2014年6月 获得西安电子科技大学学士学位 优秀本科毕业生<br>
+2020年6月 获得西安电子科技大学博士学位 本科直博 导师：<a href="https://faculty.xidian.edu.cn/JLC/zh_CN/index.htm" style="color: #2c5aa0; text-decoration: none; font-weight: normal;">焦李成教授</a></p>
 <h4 id="工作经历">工作经历</h4>
 <p>2020年7月 至 今 西安邮电大学 通信与信息工程学院 讲师</p>
 <h4 id="研究方向">研究方向</h4>
@@ -932,21 +932,22 @@ table {
     border: none;
     margin: 25px 0;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7; /* 增加行高 */
     font-family: "Times New Roman", Times, serif;
-    color: #333; /* 确保文字深色 */
+    color: #000000; /* 纯黑 */
+    font-weight: 500; /* 中等粗细 */
 }
 
-table td, table th {
-    padding: 12px 15px;
+table td {
+    padding: 14px 15px; /* 增加内边距 */
     border: none;
     vertical-align: top;
-    color: inherit; /* 继承表格的 color 设置 */
+    color: #000000;
+    font-weight: 500; /* 中等粗细 */
 }
 
-/* 分割线与悬停效果 */
 table tr {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #d0d0d0; /* 深色分割线 */
 }
 
 table tr:last-child {
@@ -954,11 +955,29 @@ table tr:last-child {
 }
 
 table tr:hover {
-    background-color: #f8f9fa;
-    color: #000; /* 悬停时文字变纯黑（可选） */
+    background-color: #e8f4ff; /* 更明显的悬停色 */
+    color: #000000;
+    font-weight: 500;
 }
-</style><blockquote>
-</blockquote>
+
+/* 重要内容特别加粗 */
+table strong {
+    color: #000000;
+    font-weight: 700; /* 加粗 */
+}
+
+table a {
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+table a:hover {
+    color: #003377;
+    text-decoration: underline;
+    font-weight: 600;
+}
+</style>
 
     </div>
   
