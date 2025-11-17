@@ -34,6 +34,9 @@
     <loc>/students/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>/test/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>/zhaosheng/</loc>
     <priority>0</priority>
   </url><url>
