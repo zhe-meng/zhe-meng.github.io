@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/courses/example/example1/</loc>
+    <loc>https://www.zhemeng.site/courses/example/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>/courses/example/example2/</loc>
+    <loc>https://www.zhemeng.site/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>/courses/</loc>
+    <loc>https://www.zhemeng.site/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>/courses/example/</loc>
+    <loc>https://www.zhemeng.site/courses/example/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://www.zhemeng.site/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>/authors/admin/</loc>
+    <loc>https://www.zhemeng.site/authors/admin/</loc>
   </url><url>
-    <loc>/class/</loc>
+    <loc>https://www.zhemeng.site/class/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/english/</loc>
+    <loc>https://www.zhemeng.site/english/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/photos/</loc>
+    <loc>https://www.zhemeng.site/photos/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/publications/</loc>
+    <loc>https://www.zhemeng.site/publications/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/students/</loc>
+    <loc>https://www.zhemeng.site/students/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/test/</loc>
+    <loc>https://www.zhemeng.site/test/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/zhaosheng/</loc>
+    <loc>https://www.zhemeng.site/zhaosheng/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>/authors/</loc>
+    <loc>https://www.zhemeng.site/authors/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://www.zhemeng.site/categories/</loc>
   </url><url>
-    <loc>/publication_types/</loc>
+    <loc>https://www.zhemeng.site/publication_types/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://www.zhemeng.site/tags/</loc>
   </url>
 </urlset>

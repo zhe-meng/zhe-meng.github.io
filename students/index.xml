@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>孟哲</title>
-    <link>/students/</link>
-      <atom:link href="/students/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zhemeng.site/students/</link>
+      <atom:link href="https://www.zhemeng.site/students/index.xml" rel="self" type="application/rss+xml" />
     <description>孟哲</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020-2021 孟哲版权所有</copyright>
     <image>
-      <url>/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zhemeng.site/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png</url>
       <title>孟哲</title>
-      <link>/students/</link>
+      <link>https://www.zhemeng.site/students/</link>
     </image>
     
   </channel>
