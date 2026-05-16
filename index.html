@@ -1144,6 +1144,19 @@ table a:hover {
     font-weight: 600;
 }
 
+/* 链接看起来像普通文字 */
+table td a {
+    color: inherit !important;  /* 继承父元素颜色 */
+    text-decoration: none !important;
+    font-weight: inherit !important;
+}
+
+/* 只有鼠标放上去才提示是可点击的 */
+table td a:hover {
+    text-decoration: underline !important;
+    color: #003377 !important;  /* 悬浮时才出现颜色 */
+}
+
 /* 手机端调整 - 只针对有序号列的表格 */
 @media screen and (max-width: 768px) {
     table {
