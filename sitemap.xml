@@ -31,6 +31,24 @@
     <loc>https://www.zhemeng.site/publications/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://www.zhemeng.site/student/hanshuai/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/haozhongyuan/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/yangzixin/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/yanqian/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/yuelele/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/yuepan/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/zhangjunjie/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/zhangtaizheng/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/zhuhanyu/</loc>
+  </url><url>
     <loc>https://www.zhemeng.site/students/</loc>
     <priority>0</priority>
   </url><url>
@@ -45,6 +63,8 @@
     <loc>https://www.zhemeng.site/categories/</loc>
   </url><url>
     <loc>https://www.zhemeng.site/publication_types/</loc>
+  </url><url>
+    <loc>https://www.zhemeng.site/student/</loc>
   </url><url>
     <loc>https://www.zhemeng.site/tags/</loc>
   </url>
