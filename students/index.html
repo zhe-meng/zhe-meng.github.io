@@ -555,8 +555,15 @@ body .article-style table + table {
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 20px; /* 从默认16px调小 */
       padding: 20px;
       width: 300px;
+      line-height: 1.4; /* 从1.5调低 */
+      flex: 1;           /* 让卡片自动平分容器宽度 */
+      min-width: 450px;  /* 最小宽度，太窄时自动换行 */
+    }
+    .card strong {
+      font-weight: 600; /* 从700调低，更轻盈 */
     }
     /* 链接样式 */
     a {
@@ -586,13 +593,17 @@ body .article-style table + table {
       <img src="/img/yangzixin.jpg" alt="杨子鑫" width="80" height="80" style="border-radius: 50%;" loading="lazy">
       <a href="/student/yangzixin/">杨子鑫 (2024级)</a>
       <strong>📄 JSTARS 1篇</strong>
-      <strong>🏆第二十二届研究生数学建模竞赛全国三等奖(3/3)</strong>
-      <strong>🏆第二十一届研究生数学建模竞赛全国三等奖(3/3)</strong>
+      <strong>🏆第22届研究生数学建模竞赛全国三等奖(3/3)</strong>
+      <strong>🏆第21届研究生数学建模竞赛全国三等奖(3/3)</strong>
+      <strong>🏆2025研究生二等学业奖学金(0.5万元)</strong>
+      <strong>🏆2024研究生三等学业奖学金(0.2万元)</strong>
     </div>
     <div class="card">
       <img src="/img/yuepan.jpg" alt="岳攀" width="80" height="80" style="border-radius: 50%;" loading="lazy">
       <a href="/student/yuepan/">岳攀 (2023级)</a>
       <strong>📄JKSUCIS 1篇</strong>
+      <strong>📋主持西安邮电大学研究生创新基金</strong>
+      <strong>🏆2023研究生三等学业奖学金(0.2万元)</strong>
     </div>
     <div class="card">
       <!-- 这里如果有头像图片，可按下方格式添加，没有则删除 img 标签 -->
@@ -600,12 +611,19 @@ body .article-style table + table {
       <a href="/student/zhangtaizheng/">张泰政 (2023级)</a> <strong>📄GRSL 1篇</strong>
       <strong>📄SPL 1篇</strong>
       <strong>🔧申请发明专利 2 项</strong>
+      <strong>📋主持西安邮电大学研究生创新基金</strong>
+      <strong>🏆2025研究生二等学业奖学金(0.5万元)</strong>
+      <strong>🏆2024研究生一等学业奖学金(1万元)</strong>
+      <strong>🏆2023研究生二等学业奖学金(0.5万元)</strong>
     </div>
     <div class="card">
       <img src="/img/yuelele.jpg" alt="岳乐乐" width="80" height="80" style="border-radius: 50%;" loading="lazy">
       <a href="/student/yuelele/">岳乐乐 (2024级)</a>
       <strong>📄GRSL 1篇</strong>
-      <strong>🏆第二十二届研究生数学建模竞赛全国三等奖(1/3)</strong>
+      <strong>📋主持西安邮电大学研究生创新基金</strong>
+      <strong>🏆第22届研究生数学建模竞赛全国三等奖(1/3)</strong>
+      <strong>🏆2025研究生三等学业奖学金(0.2万元)</strong>
+      <strong>🏆2024研究生三等学业奖学金(0.2万元)</strong>
     </div>
     <div class="card">
       <img src="/img/hanshuai.jpg" alt="韩帅" width="80" height="80" style="border-radius: 50%;" loading="lazy">
@@ -633,16 +651,22 @@ body .article-style table + table {
       <strong>📄 JSTARS 1篇</strong>
       <strong>📄 WHISPERS 2篇</strong>
       <strong>🔧申请发明专利 1 项</strong>
+      <strong>🏆2024研究生一等学业奖学金(1万元)</strong>
+      <strong>🏆2022研究生一等学业奖学金(1万元)</strong>
     </div>
     <div class="card">
       <img src="/img/zhangjunjie.jpg" alt="张俊杰" width="80" height="80" style="border-radius: 50%;" loading="lazy">
       <a href="/student/zhangjunjie/">张俊杰 (2020级)</a> 
-      <strong>🏆陕西省优秀硕士毕业生</strong>
-      <strong>🏆研究生国家奖学金</strong>
       <strong>📄 ESWA 1篇</strong>
       <strong>📄 RS 1篇</strong>
       <strong>📄 GRSL 1篇</strong>
       <strong>📄 IGARSS 1篇</strong>
+      <strong>🏆陕西省优秀硕士毕业生</strong>
+      <strong>🏆西安邮电大学优秀硕士毕业生</strong>
+      <strong>🏆西安邮电大学优秀硕士毕业论文</strong>
+      <strong>🏆2022研究生国家奖学金(2万元)</strong>
+      <strong>🏆2021研究生国家奖学金(2万元)</strong>
+      <strong>🏆2020研究生二等学业奖学金(0.5万元)</strong>
     </div>
   </div>
 </body>
