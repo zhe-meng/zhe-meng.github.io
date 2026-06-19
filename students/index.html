@@ -582,6 +582,9 @@ body .article-style table + table {
       }
       .card {
         width: 100%;
+      min-width: 0;        /* ✅ 关键：手机上取消最小宽度限制 */
+      font-size: 16px;     /* 手机字号 */
+      padding: 16px;
       }
     }
   </style>
@@ -801,7 +804,7 @@ body .article-style table + table {
     </span>
     | 
     <span style="color: #888;">
-      最后更新：2026.6.18
+      最后更新：2026.6.19
     </span>
   </p>
 </footer>
