@@ -832,11 +832,11 @@ p {
 </table>
 <hr>
 <!-- ### <font color="#2DB8CD" id="projects" style="scroll-margin-top: 80px;">  项目课题 </font><br />  -->
-<details open id="projects-details">
+<details id="projects-details">
   <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer;">
     <font color="#2DB8CD" id="projects" style="scroll-margin-top: 80px;">项目课题</font>
   </summary>
-<div id="projects-details">
+  <div class="projects-table">
 <table>
 <thead>
 <tr>
@@ -1277,23 +1277,29 @@ table td a:hover {
     color: #000000;
     font-weight: 900;
   }
-  /* 电脑端：保持 details 默认行为（open 属性生效） */
-@media (min-width: 769px) {
-  #projects-details {
-    /* 什么都不做，保持默认展开 */
-  }
-}
-
-/* 手机端：强制初始折叠 */
-@media (max-width: 768px) {
-  #projects-details:not([open]) > *:not(summary) {
-    display: none;
-  }
-  #projects-details[open] > *:not(summary) {
-    display: block;
-  }
-}
 </style>
+<!-- 页面加载自动判断屏幕宽度，手机移除open、电脑保留open -->
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+  const detailDom = document.getElementById('projects-details');
+  // 屏幕宽度≤768px 手机端：取消open，默认折叠
+  if(window.innerWidth <= 768){
+    detailDom.removeAttribute('open');
+  }else{
+    // 电脑端保持展开
+    detailDom.setAttribute('open', 'open');
+  }
+});
+// 窗口缩放时同步切换状态（可选，优化体验）
+window.addEventListener('resize', function(){
+  const detailDom = document.getElementById('projects-details');
+  if(window.innerWidth <= 768){
+    detailDom.removeAttribute('open');
+  }else{
+    detailDom.setAttribute('open', 'open');
+  }
+})
+</script>
 
     </div>
   
