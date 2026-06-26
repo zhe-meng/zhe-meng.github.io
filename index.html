@@ -831,7 +831,12 @@ p {
 </tbody>
 </table>
 <hr>
-<h3 id="font-color2db8cd-idprojects-stylescroll-margin-top-80px--项目课题-fontbr-"><font color="#2DB8CD" id="projects" style="scroll-margin-top: 80px;">  项目课题 </font><br /></h3>
+<!-- ### <font color="#2DB8CD" id="projects" style="scroll-margin-top: 80px;">  项目课题 </font><br />  -->
+<details open id="projects-details">
+  <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer;">
+    <font color="#2DB8CD" id="projects" style="scroll-margin-top: 80px;">项目课题</font>
+  </summary>
+<div id="projects-details">
 <table>
 <thead>
 <tr>
@@ -874,6 +879,8 @@ p {
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <hr>
 <div style="height: 10px;"></div>  
 <div style="height: 10px;"></div>  
@@ -1270,6 +1277,29 @@ table td a:hover {
     color: #000000;
     font-weight: 900;
   }
+  /* 电脑端：不做任何覆盖，保持 <details open> 的默认展开状态 */
+@media (min-width: 769px) {
+  #projects-details {
+    /* 不需要额外样式，默认就是展开的 */
+  }
+}
+
+/* 手机端：强制折叠，并利用 details 的 open 属性控制展开 */
+@media (max-width: 768px) {
+  #projects-details:not([open]) {
+    display: block; /* 保持 details 本身可见（标题可见） */
+  }
+  #projects-details[open] summary {
+    /* 展开时标题样式不变 */
+  }
+  /* 关键：让手机端默认不展开内容 */
+  #projects-details:not([open]) > *:not(summary) {
+    display: none; /* 隐藏标题以外的内容 */
+  }
+  #projects-details[open] > *:not(summary) {
+    display: block; /* 展开时显示内容 */
+  }
+}
 </style>
 
     </div>
