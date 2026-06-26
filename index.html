@@ -1284,20 +1284,13 @@ table td a:hover {
   }
 }
 
-/* 手机端：强制折叠，并利用 details 的 open 属性控制展开 */
+/* 手机端：默认折叠 */
 @media (max-width: 768px) {
-  #projects-details:not([open]) {
-    display: block; /* 保持 details 本身可见（标题可见） */
-  }
-  #projects-details[open] summary {
-    /* 展开时标题样式不变 */
-  }
-  /* 关键：让手机端默认不展开内容 */
   #projects-details:not([open]) > *:not(summary) {
-    display: none; /* 隐藏标题以外的内容 */
+    display: none;  /* 初始隐藏内容 */
   }
   #projects-details[open] > *:not(summary) {
-    display: block; /* 展开时显示内容 */
+    display: block; /* 展开时显示内容，用 block 或 revert */
   }
 }
 </style>
