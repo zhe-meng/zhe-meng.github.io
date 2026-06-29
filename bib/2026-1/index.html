@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="/* 页面全局控制 */ body { max-width: 920px; margin: 1rem auto; padding: 0 24px; } h1 { color: #2c5aa0; font-size: 1.6rem; margin-bottom: 20px; font-weight: 500; } /* Bib代码容器：取消滚动、自动换行、缩小字号 */ .bib-box { background: #f7f9fc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; font-family: &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;">
+  <meta name="description" content="/* 页面全局控制 */ body { max-width: 920px; margin: 4rem auto 1rem auto; /* 顶部增加留白，不紧贴导航 */ padding: 0 24px; } h1 { color: #2c5aa0; font-size: 1.6rem; margin-bottom: 20px; font-weight: 500; } /* Bib代码容器：英文Times New Roman，学">
 
   
   <link rel="alternate" hreflang="en-us" href="https://www.zhemeng.site/bib/2026-1/">
@@ -229,7 +229,7 @@
   <meta property="og:site_name" content="孟哲">
   <meta property="og:url" content="https://www.zhemeng.site/bib/2026-1/">
   <meta property="og:title" content=" | 孟哲">
-  <meta property="og:description" content="/* 页面全局控制 */ body { max-width: 920px; margin: 1rem auto; padding: 0 24px; } h1 { color: #2c5aa0; font-size: 1.6rem; margin-bottom: 20px; font-weight: 500; } /* Bib代码容器：取消滚动、自动换行、缩小字号 */ .bib-box { background: #f7f9fc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; font-family: &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;"><meta property="og:image" content="https://www.zhemeng.site/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="/* 页面全局控制 */ body { max-width: 920px; margin: 4rem auto 1rem auto; /* 顶部增加留白，不紧贴导航 */ padding: 0 24px; } h1 { color: #2c5aa0; font-size: 1.6rem; margin-bottom: 20px; font-weight: 500; } /* Bib代码容器：英文Times New Roman，学"><meta property="og:image" content="https://www.zhemeng.site/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://www.zhemeng.site/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -650,7 +650,7 @@ body .article-style table + table {
 /* 页面全局控制 */
 body {
   max-width: 920px;
-  margin: 1rem auto;
+  margin: 4rem auto 1rem auto; /* 顶部增加留白，不紧贴导航 */
   padding: 0 24px;
 }
 h1 {
@@ -659,17 +659,19 @@ h1 {
   margin-bottom: 20px;
   font-weight: 500;
 }
-/* Bib代码容器：取消滚动、自动换行、缩小字号 */
+/* Bib代码容器：英文Times New Roman，学术标准字体 */
 .bib-box {
   background: #f7f9fc;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 20px;
-  font-family: "Consolas", "Menlo", monospace;
-  font-size: 0.82rem; /* 字体缩小 */
+  /* 英文优先Times New Roman，兜底等宽字体保证对齐 */
+  font-family: "Times New Roman", "Consolas", "Menlo", monospace;
+  font-size: 0.82rem;
   line-height: 1.6;
-  white-space: pre-wrap; /* 自动换行，和txt预览效果一致 */
+  white-space: pre-wrap;
   position: relative;
+  color: #111;
 }
 /* 复制按钮样式 */
 .copy-btn {
@@ -683,6 +685,7 @@ h1 {
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.75rem;
+  font-family: Arial, sans-serif;
 }
 .copy-btn:hover {
   background: #1d4880;
@@ -693,13 +696,15 @@ h1 {
   font-size: 0.8rem;
   margin-top: 12px;
   display: none;
+  font-family: "Microsoft YaHei", sans-serif;
 }
 .download-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px; /* 加大与提示文字间距 */
   color: #2c5aa0;
   text-decoration: none;
   font-size: 0.85rem;
+  font-family: "Microsoft YaHei", sans-serif;
 }
 .download-link:hover {
   text-decoration: underline;
@@ -719,20 +724,22 @@ h1 {
 </div>
 <p class="tip-text" id="copyTip">✅ 复制成功，可直接粘贴到Zotero / LaTeX</p>
 <a class="download-link" href="/bib/2026-01.bib" target="_blank" rel="noopener noreferrer" download>📥 下载标准 .bib 文件</a>
-<!-- 下面批量加空白换行，数字越多底部空白越大 -->
+<!-- 底部空白区域 -->
 <div style="height: 110px;"></div>
 <script>
 function copyBib() {
-  // 获取bib纯文本，剔除按钮文字
-  const box = document.getElementById('bibContent');
-  const text = box.innerText.replace("复制全部BibTeX", "").trim();
-  // 复制到剪贴板
-  navigator.clipboard.writeText(text).then(() => {
-    const tip = document.getElementById('copyTip');
-    tip.style.display = "block";
-    // 3秒后自动隐藏提示
-    setTimeout(() => tip.style.display = "none", 3000);
-  });
+  // 用 #bibText 单独存内容，不混入按钮文字
+  const text = document.getElementById('bibText').innerText.trim();
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      const tip = document.getElementById('copyTip');
+      tip.style.display = 'block';
+      setTimeout(() => tip.style.display = 'none', 3000);
+    })
+    .catch(() => {
+      // 如果 Clipboard API 失败，弹出提示
+      alert('复制失败，请手动复制');
+    });
 }
 </script>
 
