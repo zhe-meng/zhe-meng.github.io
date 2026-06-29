@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bibs | 孟哲</title>
+    <link>https://www.zhemeng.site/bib/</link>
+      <atom:link href="https://www.zhemeng.site/bib/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bibs</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020-2021 孟哲版权所有</copyright>
+    <image>
+      <url>https://www.zhemeng.site/images/icon_hu9e3f6dec2cb90a5586ea0431eed5e9cc_740270_512x512_fill_lanczos_center_2.png</url>
+      <title>Bibs</title>
+      <link>https://www.zhemeng.site/bib/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2026-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2026-1/</guid>
+      <description>&lt;style&gt;
+/* 页面全局控制 */
+body {
+  max-width: 920px;
+  margin: 1rem auto;
+  padding: 0 24px;
+}
+h1 {
+  color: #2c5aa0;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+/* Bib代码容器：取消滚动、自动换行、缩小字号 */
+.bib-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.82rem; /* 字体缩小 */
+  line-height: 1.6;
+  white-space: pre-wrap; /* 自动换行，和txt预览效果一致 */
+  position: relative;
+}
+/* 复制按钮样式 */
+.copy-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 12px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+/* 复制成功提示 */
+.tip-text {
+  color: #208c42;
+  font-size: 0.8rem;
+  margin-top: 12px;
+  display: none;
+}
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2c5aa0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.download-link:hover {
+  text-decoration: underline;
+}
+&lt;/style&gt;
+&lt;div class=&#34;bib-box&#34; id=&#34;bibContent&#34;&gt;
+@article{meng2026joint,
+  title={Joint Classification of Hyperspectral and LiDAR Data Based on Dynamic Sparse-Dense Transformer and Mamba},
+  author={Meng, Zhe and Yang, Zixin and Zhao, Feng},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume={19},
+  pages={11445--11461},
+  year={2026},
+  publisher={IEEE}
+}
+  &lt;button class=&#34;copy-btn&#34; onclick=&#34;copyBib()&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功，可直接粘贴到Zotero / LaTeX&lt;/p&gt;
+&lt;a class=&#34;download-link&#34; href=&#34;https://www.zhemeng.site/bib/2026-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download&gt;📥 下载标准 .bib 文件&lt;/a&gt;
+&lt;!-- 下面批量加空白换行，数字越多底部空白越大 --&gt;
+&lt;div style=&#34;height: 110px;&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+function copyBib() {
+  // 获取bib纯文本，剔除按钮文字
+  const box = document.getElementById(&#39;bibContent&#39;);
+  const text = box.innerText.replace(&#34;复制全部BibTeX&#34;, &#34;&#34;).trim();
+  // 复制到剪贴板
+  navigator.clipboard.writeText(text).then(() =&gt; {
+    const tip = document.getElementById(&#39;copyTip&#39;);
+    tip.style.display = &#34;block&#34;;
+    // 3秒后自动隐藏提示
+    setTimeout(() =&gt; tip.style.display = &#34;none&#34;, 3000);
+  });
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
