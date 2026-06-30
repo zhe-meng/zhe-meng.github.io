@@ -812,7 +812,7 @@ body .article-style table + table {
     </span>
     |
     <span style="color: #888;">
-      最后更新：2026.6.29
+      最后更新：2026.6.30
     </span>
   </span>
 </p>
@@ -909,34 +909,30 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
   const currentPath = window.location.pathname;
 
+  
   function clearAllActive() {
-    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks.forEach(item => item.classList.remove('active'));
   }
 
   
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     
-    if ((href === './' || href === '/') && (currentPath === '/' || currentPath === '')) {
+    if (!href.startsWith('#') && currentPath.startsWith('/' + href)) {
       link.classList.add('active');
     }
     
-    else if (!href.startsWith('#') && currentPath.startsWith('/' + href)) {
+    else if ((href === './' || href === '/') && (currentPath === '/' || currentPath === '')) {
       link.classList.add('active');
     }
 
     
-    link.addEventListener('click', function () {
-      
+    link.onclick = function() {
       clearAllActive();
-      
       this.classList.add('active');
-      
       const self = this;
-      setTimeout(() => {
-        self.classList.add('active');
-      }, 80);
-    })
+      setTimeout(() => self.classList.add('active'), 80);
+    };
   });
 });
 </script>
