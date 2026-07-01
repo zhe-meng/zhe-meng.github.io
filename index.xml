@@ -56,6 +56,2267 @@
     
     <item>
       <title></title>
+      <link>https://www.zhemeng.site/bib/2019-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2019-1/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2019fully,
+  title={Fully dense multiscale fusion network for hyperspectral image classification},
+  author={Meng, Zhe and Li, Lingling and Jiao, Licheng and Feng, Zhixi and Tang, Xu and Liang, Miaomiao},
+  journal={Remote Sensing},
+  volume={11},
+  number={22},
+  pages={2718},
+  year={2019},
+  publisher={MDPI}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Li L, Jiao L, et al. Fully dense multiscale fusion network for hyperspectral image classification[J]. Remote Sensing, 2019, 11(22): 2718.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2019-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2019-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2019-2/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2019multipath,
+  title={Multipath residual network for spectral-spatial hyperspectral image classification},
+  author={Meng, Zhe and Li, Lingling and Tang, Xu and Feng, Zhixi and Jiao, Licheng and Liang, Miaomiao},
+  journal={Remote Sensing},
+  volume={11},
+  number={16},
+  pages={1896},
+  year={2019},
+  publisher={MDPI}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Li L, Tang X, et al. Multipath residual network for spectral-spatial hyperspectral image classification[J]. Remote Sensing, 2019, 11(16): 1896.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2019-02.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2021-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2021-1/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2021hyperspectral,
+  title={Hyperspectral image classification with mixed link networks},
+  author={Meng, Zhe and Jiao, Licheng and Liang, Miaomiao and Zhao, Feng},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume={14},
+  pages={2494--2507},
+  year={2021},
+  publisher={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Jiao L, Liang M, et al. Hyperspectral image classification with mixed link networks[J]. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2021, 14: 2494-2507.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2021-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2021-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2021-2/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2021ss,
+  title={SS-MLP: A novel spectral-spatial MLP architecture for hyperspectral image classification},
+  author={Meng, Zhe and Zhao, Feng and Liang, Miaomiao},
+  journal={Remote Sensing},
+  volume={13},
+  number={20},
+  pages={4060},
+  year={2021},
+  publisher={MDPI}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Zhao F, Liang M. SS-MLP: A novel spectral-spatial MLP architecture for hyperspectral image classification[J]. Remote Sensing, 2021, 13(20): 4060.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2021-02.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2021-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2021-3/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{zhao2021densely,
+  title={Densely connected pyramidal dilated convolutional network for hyperspectral image classification},
+  author={Zhao, Feng and Zhang, Junjie and Meng, Zhe and Liu, Hanqiang},
+  journal={Remote Sensing},
+  volume={13},
+  number={17},
+  pages={3396},
+  year={2021},
+  publisher={MDPI}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Zhao F, Zhang J, Meng Z, et al. Densely connected pyramidal dilated convolutional network for hyperspectral image classification[J]. Remote Sensing, 2021, 13(17): 3396.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2021-03.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2021-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2021-4/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2021deep,
+  title={Deep residual involution network for hyperspectral image classification},
+  author={Meng, Zhe and Zhao, Feng and Liang, Miaomiao and Xie, Wen},
+  journal={Remote Sensing},
+  volume={13},
+  number={16},
+  pages={3055},
+  year={2021},
+  publisher={MDPI}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Zhao F, Liang M, et al. Deep residual involution network for hyperspectral image classification[J]. Remote Sensing, 2021, 13(16): 3055.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2021-04.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2022-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2022-1/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{zhang2022convolution,
+  title={Convolution transformer mixer for hyperspectral image classification},
+  author={Zhang, Junjie and Meng, Zhe and Zhao, Feng and Liu, Hanqiang and Chang, Zhenhui},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  year={2022},
+  note = {{Art. no. 6014205}},
+  publisher={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Zhang J, Meng Z, Zhao F, et al. Convolution transformer mixer for hyperspectral image classification[J]. IEEE Geoscience and Remote Sensing Letters, 2022, 19: 6014205.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2022-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2022-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2022-2/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2022lightweight,
+  title={A lightweight spectral-spatial convolution module for hyperspectral image classification},
+  author={Meng, Zhe and Jiao, Licheng and Liang, Miaomiao and Zhao, Feng},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  year={2022},
+  note = {{Art. no. 5505105}},
+  publisher={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Jiao L, Liang M, et al. A lightweight spectral-spatial convolution module for hyperspectral image classification[J]. IEEE Geoscience and Remote Sensing Letters, 2022, 19: 5505105.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2022-02.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2022-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2022-3/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@inproceedings{meng2022residual,
+  title={Residual dense asymmetric convolutional neural network for hyperspectral image classification},
+  author={Meng, Zhe and Zhang, Junjie and Zhao, Feng and Liu, Hanqiang and Chang, Zhenhui},
+  booktitle={IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium},
+  pages={3159--3162},
+  year={2022},
+  organization={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Zhang J, Zhao F, et al. Residual dense asymmetric convolutional neural network for hyperspectral image classification[C]//IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium. IEEE, 2022: 3159-3162.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2022-03.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2023-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2023-1/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@inproceedings{meng2023hyperspectral,
+  title={Hyperspectral image classification with dynamic spatial-spectral attention network},
+  author={Meng, Zhe and Yan, Qian and Zhao, Feng and Liang, Miaomiao},
+  booktitle={2023 13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS)},
+  pages={1--4},
+  year={2023},
+  organization={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Yan Q, Zhao F, et al. Hyperspectral image classification with dynamic spatial-spectral attention network[C]//2023 13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS). IEEE, 2023: 1-4.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2023-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2023-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2023-2/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@inproceedings{meng2023multi,
+  title={Multi-scale feature attention and transformer for hyperspectral image classification},
+  author={Meng, Zhe and Yan, Qian and Zhao, Feng and Liang, Miaomiao},
+  booktitle={2023 13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS)},
+  pages={1--5},
+  year={2023},
+  organization={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Yan Q, Zhao F, et al. Multi-scale feature attention and transformer for hyperspectral image classification[C]//2023 13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS). IEEE, 2023: 1-5.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2023-02.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.zhemeng.site/bib/2024-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zhemeng.site/bib/2024-1/</guid>
+      <description>&lt;style&gt;
+body {
+  max-width: 820px;
+  margin: 2rem auto 1rem auto;
+  padding: 0 20px;
+}
+
+/* ===== 复制成功悬浮提示 ===== */
+.tip-text {
+  color: #208c42;
+  font-size: 0.85rem;
+  display: none;
+  font-family: &#34;Microsoft YaHei&#34;, sans-serif;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-thickness: 0 !important;
+  padding: 8px 16px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  font-weight: 500;
+  width: fit-content;
+  pointer-events: none;
+  position: fixed;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.tip-text.visible {
+  display: block !important;
+}
+
+/* ===== 统一引用框（BibTeX + GB/T7714 共用，保证对齐） ===== */
+.ref-box {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  /* 上下仅2px，左右6px，几乎无留白 */
+  padding: 2px 6px;
+  font-family: &#34;Times New Roman&#34;, &#34;Consolas&#34;, &#34;Menlo&#34;, monospace;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  position: relative;
+  color: #111;
+  max-width: 100%;
+  margin-bottom: 6px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#bibText, #gbtText {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* ===== 复制按钮统一样式 ===== */
+.copy-btn {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  padding: 2px 8px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+}
+.copy-btn:hover {
+  background: #1d4880;
+}
+
+a[download]:hover {
+  color: #1d4880 !important;
+}
+.bottom-spacer {
+  height: 80px;
+}
+&lt;/style&gt;
+&lt;p class=&#34;tip-text&#34; id=&#34;copyTip&#34;&gt;✅ 复制成功&lt;/p&gt;
+&lt;!-- 第一块 BibTeX --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;bibText&#34;&gt;
+@article{meng2024multiscale,
+  title={Multiscale super token transformer for hyperspectral image classification},
+  author={Meng, Zhe and Zhang, Taizheng and Zhao, Feng and Chen, Gaige and Liang, Miaomiao},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={21},
+  pages={1--5},
+  year={2024},
+  note = {{Art. no. 5508105}},
+  publisher={IEEE}
+}
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyBibBtn&#34;&gt;复制全部BibTeX&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 第二块 GB/T 7714 国标引用 --&gt;
+&lt;div class=&#34;ref-box&#34;&gt;
+  &lt;span id=&#34;gbtText&#34;&gt;
+Meng Z, Zhang T, Zhao F, et al. Multiscale super token transformer for hyperspectral image classification[J]. IEEE Geoscience and Remote Sensing Letters, 2024, 21: 5508105.
+  &lt;/span&gt;
+  &lt;button class=&#34;copy-btn&#34; id=&#34;copyGbtBtn&#34;&gt;复制 GB/T 7714&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 下载链接 --&gt;
+&lt;div style=&#34;margin-top: 30px;&#34;&gt;
+  &lt;a href=&#34;https://www.zhemeng.site/bib/2024-01.bib&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; download style=&#34;color:#2c5aa0;text-decoration:none;font-size:0.75rem;font-family:&#39;Microsoft YaHei&#39;,sans-serif;&#34;
+    onmouseover=&#34;this.style.color=&#39;#1d4880&#39;&#34;
+    onmouseout=&#34;this.style.color=&#39;#2c5aa0&#39;&#34;&gt;
+    ⬇ 下载标准 .bib 文件
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bottom-spacer&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const bibBtn = document.getElementById(&#39;copyBibBtn&#39;);
+    const gbtBtn = document.getElementById(&#39;copyGbtBtn&#39;);
+    if (bibBtn) bibBtn.addEventListener(&#39;click&#39;, copyBib);
+    if (gbtBtn) gbtBtn.addEventListener(&#39;click&#39;, copyGbt7714);
+});
+
+// 复制BibTeX
+function copyBib() {
+    const textElement = document.getElementById(&#39;bibText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到 BibTeX 内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyBibBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 复制GB/T 7714
+function copyGbt7714() {
+    const textElement = document.getElementById(&#39;gbtText&#39;);
+    if (!textElement) {
+        alert(&#39;错误：找不到国标参考文献内容&#39;);
+        return;
+    }
+    const text = textElement.innerText.trim();
+    const btn = document.getElementById(&#34;copyGbtBtn&#34;);
+    const originText = btn.innerText;
+    copyLogic(text, btn, originText);
+}
+
+// 通用复制逻辑（复用代码，减少冗余）
+function copyLogic(text, btn, originTxt) {
+    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=&gt;{
+            btn.innerText = &#34;✅ 复制成功&#34;;
+            setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+        });
+    } else {
+        fallbackCopy(text, btn, originTxt);
+    }
+}
+
+// 低版本浏览器兼容复制
+function fallbackCopy(text, btn, originTxt) {
+    const textarea = document.createElement(&#39;textarea&#39;);
+    textarea.value = text;
+    textarea.style.position = &#39;fixed&#39;;
+    textarea.style.top = &#39;-9999px&#39;;
+    textarea.style.left = &#39;-9999px&#39;;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand(&#39;copy&#39;);
+    document.body.removeChild(textarea);
+    btn.innerText = &#34;✅ 复制成功&#34;;
+    setTimeout(()=&gt;btn.innerText = originTxt, 2500);
+}
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://www.zhemeng.site/bib/2025-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.zhemeng.site/bib/2025-1/</guid>
