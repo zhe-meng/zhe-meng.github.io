@@ -292,6 +292,17 @@ body .article-style table + table {
   
 
   
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?a080aba622bdff1934cbbadfbc9274e7";
+    hm.async = true;
+    hm.defer = true;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
 
 </head>
 
@@ -839,6 +850,14 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.add('active');
     })
   });
+
+  
+  setTimeout(function(){
+    if (typeof busuanzi_value_site_pv === 'undefined') {
+      const pvBox = document.getElementById('busuanzi_container_site_pv');
+      if(pvBox) pvBox.style.display = 'none';
+    }
+  }, 800);
 });
 </script>
 
