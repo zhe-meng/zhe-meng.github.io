@@ -8,7 +8,7 @@
     <loc>https://www.zhemeng.site/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.zhemeng.site/allpub/</loc>
+    <loc>https://www.zhemeng.site/publications/</loc>
   </url><url>
     <loc>https://www.zhemeng.site/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
@@ -62,9 +62,6 @@
     <priority>0</priority>
   </url><url>
     <loc>https://www.zhemeng.site/photos/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://www.zhemeng.site/publications/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://www.zhemeng.site/student/chensongwei/</loc>
